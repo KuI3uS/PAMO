@@ -1,37 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
-
-    <EditText
-        android:id="@+id/weightInput"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Podaj wagę (kg)"
-        android:inputType="numberDecimal" />
-
-    <EditText
-        android:id="@+id/heightInput"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Podaj wzrost (cm)"
-        android:inputType="numberDecimal" />
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#FFFFFF">
 
     <Button
-        android:id="@+id/calculateButton"
+        android:id="@+id/btnBmi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Oblicz BMI" />
+        android:text="Kalkulator BMI"
+        android:layout_marginBottom="16dp"/>
 
-    <TextView
-        android:id="@+id/resultText"
+    <Button
+        android:id="@+id/btnCalories"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Twój BMI pojawi się tutaj"
-        android:textSize="18sp"
-        android:gravity="center"
-        android:paddingTop="16dp" />
+        android:text="Kalkulator Kalorii"
+        android:layout_marginBottom="16dp"/>
 
+    <Button
+        android:id="@+id/btnRecipes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Przepisy kulinarne"/>
 </LinearLayout>
