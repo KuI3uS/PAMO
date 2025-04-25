@@ -20,15 +20,9 @@ public class MainActivity extends AppCompatActivity {
         btnCalories = findViewById(R.id.btnCalories);
         btnRecipes = findViewById(R.id.btnRecipes);
 
-        btnBmi.setOnClickListener(v -> {
-            startActivity(new Intent(MainActivity.this, BmiCalculatorActivity.class));
-        });
-        btnCalories.setOnClickListener(v -> {
-            startActivity(new Intent(MainActivity.this, CalorieCalculatorActivity.class));
-        });
-        btnRecipes.setOnClickListener(v -> {
-            startActivity(new Intent(MainActivity.this, RecipeActivity.class));
-        });
+        btnBmi.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, BmiCalculatorActivity.class)));
+        btnCalories.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, CalorieCalculatorActivity.class)));
+        btnRecipes.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, RecipeActivity.class)));
     }
 
 }

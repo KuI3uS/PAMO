@@ -1,5 +1,6 @@
 package com.example.bmicalculator;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
@@ -22,6 +23,16 @@ public class CalorieCalculatorActivity extends AppCompatActivity {
 
     Button seeRecipesButton;
 
+    public static double calculateCalories(float weight, float height, int age, boolean isMale, double multiplier) {
+        double bmr;
+        if (isMale) {
+            bmr = 66.47 + (13.75 * weight) + (5.003 * height) - (6.755 * age);
+        } else {
+            bmr = 655.1 + (9.563 * weight) + (1.850 * height) - (4.676 * age);
+        }
+        return bmr * multiplier;
+    }
+
 
     String[] activityLevels = {
             "Brak aktywności",
@@ -34,6 +45,7 @@ public class CalorieCalculatorActivity extends AppCompatActivity {
 
     double result = 0;
 
+    @SuppressLint({"DefaultLocale", "SetTextI18n"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
