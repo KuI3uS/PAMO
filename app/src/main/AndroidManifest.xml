@@ -23,6 +23,13 @@
             android:name=".BmiCalculatorActivity"
             android:exported="true" />
         <activity
+            android:name="java_kotlin.ShoppingListActivity"
+            android:exported="true" />
+        <activity
+            android:name="java_kotlin.ChartActivity"
+            android:exported="true" />
+
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/Theme.BMICalculator" />
@@ -31,6 +38,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>

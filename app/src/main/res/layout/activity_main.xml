@@ -25,4 +25,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Przepisy kulinarne"/>
+
+    <Button
+        android:id="@+id/btnShopping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lista zakupów" />
+
+    <Button
+        android:id="@+id/btnChart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wykres BMI" />
 </LinearLayout>

@@ -23,6 +23,17 @@ public class MainActivity extends AppCompatActivity {
         btnBmi.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, BmiCalculatorActivity.class)));
         btnCalories.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, CalorieCalculatorActivity.class)));
         btnRecipes.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, RecipeActivity.class)));
+
+        Button btnShopping = findViewById(R.id.btnShopping);
+        btnShopping.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, java_kotlin.ShoppingListActivity.class);
+            startActivity(intent);
+        });
+
+        Button btnChart = findViewById(R.id.btnChart);
+        btnChart.setOnClickListener(v -> {
+            startActivity(new Intent(MainActivity.this, java_kotlin.ChartActivity.class));
+        });
     }
 
 }
